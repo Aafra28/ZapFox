@@ -28,8 +28,8 @@ export default function Home() {
                     Start For Free Today
                   </span>
                 </Button>
-                <h1 className="text-5xl md:text-8xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
-                  Automate Your Work With Fuzzie
+                <h1 className="text-5xl md:text-8xl  bg-clip-text text-transparent bg-white font-sans font-bold">
+                  Automate Your Work With ZapFox 
                 </h1>
               </div>
             }
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </section>
       <InfiniteMovingCards
-        className="md:mt-[18rem] mt-[-100px]"
+        className="md:mt-[18rem] mt-[-10px]"
         items={clients}
         direction="right"
         speed="slow"
@@ -45,7 +45,7 @@ export default function Home() {
       <section>
         <HeroParallax products={products}></HeroParallax>
       </section>
-      <section className="mt-[-500px]">
+      <section className="mt-[-100px]">
         <LampComponent />
         <div className="flex flex-wrap items-center justify-center flex-col md:flex-row gap-8 -mt-72">
           <CardContainer className="inter-var ">
@@ -194,3 +194,4 @@ export default function Home() {
     </main>
   )
 }
+

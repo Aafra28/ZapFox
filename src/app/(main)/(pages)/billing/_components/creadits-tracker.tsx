@@ -16,9 +16,9 @@ const CreditTracker = ({ credits, tier }: Props) => {
           <Progress
             value={
               tier == 'Free'
-                ? credits * 10
+                ? credits * 100
                 : tier == 'Unlimited'
-                ? 100
+                ? 1000
                 : credits
             }
             className="w-full"
@@ -26,7 +26,7 @@ const CreditTracker = ({ credits, tier }: Props) => {
           <div className="flex justify-end">
             <p>
               {credits}/
-              {tier == 'Free' ? 10 : tier == 'Pro' ? 100 : 'Unlimited'}
+              {tier == 'Free' ? 100 : tier == 'Pro' ? 100 : 'Unlimited'}
             </p>
           </div>
         </CardContent>
